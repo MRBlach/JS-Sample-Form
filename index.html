@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>Sample JavaScript Form</h1>
+    <em><label>* Indicates Required Field</label></em>
+  </header>
+
+  <main class="flex-container">
+    <form>
+      <div class="col">
+
+        <fieldset>
+          <legend>Contact Information</legend>
+
+          <input type="text" name="fname" placeholder="First Name*" required />
+
+          <input type="text" name="lname" placeholder="Last Name*" required /><br />
+
+          <input type="tel" name="tel" placeholder="Phone Number" /><br />
+
+          <input type="Email" name="email" placeholder="Email Address*" required /><br><hr>
+
+          <div class="pronouns">
+          <p>What are your prefered pronouns?</p>
+            <input type="radio" id="she/her" name="gender">
+            <label for="she/her">She/ Her</label><br>
+            <input type="radio" id="he/him" name="gender">
+            <label for="he/him">He/ Him</label><br>
+            <input type="radio" id="they/them" name="gender">
+            <label for="they/them">They/ Them</label><br />
+            <input type="radio" id="other" name="gender">
+            <label for="other">Other/ Please specify:<input type="text" /></label>
+          </div>
+        </fieldset>
+
+
+        <fieldset>
+          <legend>Occupation</legend>
+            <label for="jobs">Choose a job:</label>
+              <select id="jobs" name="jobs">
+                <option value="">Agriculture, Food and Natural Resources</option>
+                <option value="">Architecture and Construction</option>
+                <option value="">Arts, Audio/Video Technology and Communications</option>
+                <option value="">Business Management and Administration</option>
+                <option value="">Education and Training</option>
+                <option value="">Finance</option>
+                <option value="">Freelance, Self Employeed</option>
+                <option value="">Government and Public Administration</option>
+                <option value="">Health Science</option>
+                <option value="">Hospitality and Tourism</option>
+                <option value="">Human Services</option>
+                <option value="">Information Technology</option>
+                <option value="">Law, Public Safety, Corrections and Security</option>
+                <option value="">Manufacturing</option>
+                <option value="">Science, Technology, Engineering and Mathematics</option>
+                <option value="">Student</option>
+                <option value="">Transportation, Distribution and Logistics</option>
+                <option value="">Unemployeed</option>
+              </select><br>
+
+            <div class="workStat">
+            <p>What is your current work status?</p>
+              <input type="radio" id="ft" name="workStatus"/>
+              <label for="ft">Full time</label><br>
+              <input type="radio" id="pt" name="workStatus"/>
+              <label for="pt">Part time</label><br>
+              <input type="radio" id="seasonal" name="workStatus"/>
+              <label for="seasonal">Seasonal hire</label><br>
+              <input type="radio" id="temp" name="workStatus"/>
+              <label for="temp">Temporary hire</label><br>
+              <input type="radio" id="contract" name="workStatus"/>
+              <label for="contract">Contracted hire</label><br>
+              <input type="radio" id="unemployeed" name="workStatus"/>
+              <label for="unemployeed">Currently unemployeed</label><br>
+              <input type="radio" id="paidIntern" name="workStatus"/>
+              <label for="contract">Paid intern</label><br>
+              <input type="radio" id="unpaidIntern" name="workStatus"/>
+              <label for="contract">Unpaid intern</label><br>
+              <hr>
+              <p>What is your current or most previous pay rate?</p>
+              <input type="number" name="" value="" placeholder="$ USD">per
+              <select class="rate" name="payRate">
+                <option value="">hour</option>
+                <option value="">week</option>
+                <option value="">two weeks</option>
+                <option value="">month</option>
+                <option value="">quarter year</option>
+                <option value="">year</option>
+              </select>
+              <hr>
+              <p>Estimate a preferred starting <strong>hourly </strong>pay rate.</p>
+              <div class="payRange">
+                <input type="range" name="" class="slider" value="1" min="1" max="100" id="myRange">
+                <p>Pay rate:  $ <span id="demo"></span> /hr</p>
+              </div>
+              <hr>
+              <p>Which work status do you prefer?<br> Check all that apply.</p>
+              <input type="checkbox" id="ft" name="workPref"/>
+              <label for="ft">Full time</label><br>
+              <input type="checkbox" id="pt" name="workPref"/>
+              <label for="pt">Part time</label><br>
+              <input type="checkbox" id="seasonal" name="workPref"/>
+              <label for="seasonal">Seasonal hire</label><br>
+              <input type="checkbox" id="temp" name="workPref"/>
+              <label for="temp">Temporary hire</label><br>
+              <input type="checkbox" id="contract" name="workPref"/>
+              <label for="contract">Contracted hire</label><br>
+              <input type="checkbox" id="unemployeed" name="workPref"/>
+              <label for="unemployeed">Currently unemployeed</label><br>
+              <input type="checkbox" id="paidIntern" name="workPref"/>
+              <label for="contract">Paid intern</label><br>
+              <input type="checkbox" id="unpaidIntern" name="workPref"/>
+              <label for="contract">Unpaid intern</label><br>
+            </div>
+        </fieldset>
+
+
+        <fieldset>
+
+          <legend>Recreation</legend>
+            <div class="rec">
+              <p>What is your favorite color?</p>
+              <input type="color" id="favcolor" name="favcolor" value="#ff0000"><br><hr>
+
+            <p>When was the last time you went on a vacation?</p>
+            <input type="date" name="" value=""><hr>
+
+            <p>Where did you go?</p>
+            <textarea type="text" name="comment" placeholder="Briefly describe your last vacation."></textarea>
+            </div>
+        </fieldset>
+        <input type="reset" name="" value="Cancel" style="font-weight: bold;color:white; background-color:red;">
+        <input type="submit" />
+      </div>
+
+  </main>
+
+
+  <script src="javaScript/practice-projects/form1.js">
+
+  </script>
+</body>
+
+</html>
